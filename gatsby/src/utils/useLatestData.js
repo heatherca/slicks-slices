@@ -10,7 +10,7 @@ export default function useLatestData(){
   const [slicemasters, setSlicemasters] = useState();
   // use a side effect to fetch the data from the graphql endpoint 
   useEffect(function(){
-    console.log('fetching data')
+  
     fetch(process.env.GATSBY_GRAPHQL_ENDPOINT, {
       method: 'POST',
       headers: {
